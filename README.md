@@ -83,7 +83,7 @@ Movie Recomendation/
 1. **Clone the repository**
    ```bash
    git clone https://github.com/nilaymallikk/Movie-Recommender-System
-   cd "Movie Recommender"
+   cd Movie Recommender
    ```
 
 2. **Install dependencies**
