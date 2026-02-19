@@ -1,20 +1,20 @@
-# 🎬 Netflix-Style Movie Recommender System
+# Netflix-Style Movie Recommender System
 
 A **content-based movie recommendation web application** that suggests similar movies based on a user's selected title. Built with Python, Scikit-learn, and Streamlit, featuring a sleek Netflix-inspired dark theme.
 
 ---
 
-## 📸 Features
+## Features
 
-- 🔍 **Interactive movie search** — Select from 10,000+ movies via dropdown
-- 🎯 **Smart recommendations** — Get top 5 similar movies using cosine similarity
-- 🖼️ **Movie posters** — Dynamically fetched from the TMDB API
-- 🎨 **Netflix dark theme** — Custom CSS with animated card transitions
-- ⚡ **Fast performance** — Precomputed similarity matrix for instant results
+- **Interactive movie search** — Select from 10,000+ movies via dropdown
+- **Smart recommendations** — Get top 5 similar movies using cosine similarity
+- **Movie posters** — Dynamically fetched from the TMDB API
+- **Netflix dark theme** — Custom CSS with animated card transitions
+- **Fast performance** — Precomputed similarity matrix for instant results
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |-----------|-----------|
@@ -28,7 +28,7 @@ A **content-based movie recommendation web application** that suggests similar m
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 Movie Recomendation/
@@ -42,7 +42,7 @@ Movie Recomendation/
 
 ---
 
-## 🔄 How It Works
+## How It Works
 
 ### 1. Data Preprocessing
 - Load the TMDB 10K movies dataset (`movies.csv`)
@@ -70,7 +70,7 @@ Movie Recomendation/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -82,7 +82,7 @@ Movie Recomendation/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/nilaymallikk/Movie-Recommender-System
    cd "Movie Recommender"
    ```
 
@@ -121,12 +121,9 @@ Movie Recomendation/
    ```bash
    streamlit run app.py
    ```
-
-5. **Open in browser** → [http://localhost:8501](http://localhost:8501)
-
 ---
 
-## 📓 Jupyter Notebook
+## Jupyter Notebook
 
 The `movie_recommender.ipynb` notebook walks through the entire ML pipeline step by step:
 
@@ -145,7 +142,7 @@ The `movie_recommender.ipynb` notebook walks through the entire ML pipeline step
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 - **Source:** TMDB 10K Movies Dataset
 - **Size:** 10,000 movies
@@ -154,7 +151,7 @@ The `movie_recommender.ipynb` notebook walks through the entire ML pipeline step
 
 ---
 
-## 🔑 API Reference
+## API Reference
 
 This project uses the [TMDB API](https://www.themoviedb.org/documentation/api) to fetch movie poster images.
 
@@ -170,7 +167,7 @@ https://image.tmdb.org/t/p/w500{poster_path}
 
 ---
 
-## 📝 License
+## License
 
 This project is for educational purposes.
 
