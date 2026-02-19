@@ -5,7 +5,7 @@ import requests
 
 # ─── Page Configuration ───
 st.set_page_config(
-    page_title="🎬 Netflix Movie Recommender",
+    page_title="Netflix Movie Recommender",
     page_icon="🎬",
     layout="wide"
 )
