@@ -1,5 +1,11 @@
 # Netflix-Style Movie Recommender System
 
+![Homepage](screenshots/homepage.png)
+![Example:1](screenshots/1.png)
+![Example:2](screenshots/2.png)
+
+
+
 A **content-based movie recommendation web application** that suggests similar movies based on a user's selected title. Built with Python, Scikit-learn, and Streamlit, featuring a sleek Netflix-inspired dark theme.
 
 ---
@@ -25,20 +31,6 @@ A **content-based movie recommendation web application** that suggests similar m
 | API | TMDB (The Movie Database) |
 | Serialization | Pickle |
 | Notebook | Jupyter Notebook |
-
----
-
-## Project Structure
-
-```
-Movie Recomendation/
-├── app.py                    # Streamlit web application
-├── movie_recommender.ipynb   # Jupyter notebook (ML pipeline)
-├── movies.csv                # Raw TMDB 10K movies dataset
-├── movies.pkl                # Preprocessed movie data (pickle)
-├── similarity.pkl            # Cosine similarity matrix (pickle)
-└── README.md                 # Project documentation
-```
 
 ---
 
@@ -83,7 +75,7 @@ Movie Recomendation/
 1. **Clone the repository**
    ```bash
    git clone https://github.com/nilaymallikk/Movie-Recommender-System
-   cd Movie Recommender
+   cd <Movie Recommender>
    ```
 
 2. **Install dependencies**
