@@ -85,29 +85,7 @@ A **content-based movie recommendation web application** that suggests similar m
 
 3. **Generate the model files** (if `movies.pkl` and `similarity.pkl` don't exist)
 
-   Open `movie_recommender.ipynb` in Jupyter Notebook and run all cells, **or** run:
-   ```bash
-   python3 -c "
-   import pandas as pd, pickle
-   from sklearn.feature_extraction.text import CountVectorizer
-   from sklearn.metrics.pairwise import cosine_similarity
-
-   df = pd.read_csv('movies.csv')
-   movies = df[['id','title','overview','genre']].dropna().copy()
-   movies['genre'] = movies['genre'].apply(lambda x: x.replace(',', ' '))
-   movies['tags'] = (movies['overview'] + ' ' + movies['genre']).str.lower()
-   movies.drop(columns=['overview','genre'], inplace=True)
-   movies.reset_index(drop=True, inplace=True)
-
-   cv = CountVectorizer(max_features=10000, stop_words='english')
-   vectors = cv.fit_transform(movies['tags'])
-   similarity = cosine_similarity(vectors)
-
-   pickle.dump(movies, open('movies.pkl','wb'))
-   pickle.dump(similarity, open('similarity.pkl','wb'))
-   print('Done! Generated movies.pkl and similarity.pkl')
-   "
-   ```
+   Open `movie_recommender.ipynb` in Jupyter Notebook and run all cells
 
 4. **Launch the app**
    ```bash
@@ -158,15 +136,3 @@ https://image.tmdb.org/t/p/w500{poster_path}
 ```
 
 ---
-
-## License
-
-This project is for educational purposes.
-
----
-
-## 🙏 Acknowledgements
-
-- [TMDB](https://www.themoviedb.org/) for the movie data and poster API
-- [Streamlit](https://streamlit.io/) for the web framework
-- [Scikit-learn](https://scikit-learn.org/) for ML tools
